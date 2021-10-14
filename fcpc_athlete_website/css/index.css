@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sora:wght@100;200;600;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    background: #ECF0F5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    background: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    background: transparent;
+}
+/* Header */
+.container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.header .contact-social-media-container{
+    position: relative; 
+    margin: auto;
+    padding: 0 50px 0 50px; 
+    background: #004AAD;
+    height: 50px;
+    width: 80%;
+    color: #FFF; 
+}
+
+.header .contact-social-media-container a{ 
+    text-decoration: none;
+    color: #FFF; 
+}
+
+.header .contact-social-media-container::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    height: 60px;
+    width: 60px; 
+    top: 15px;
+    left: -30px;
+    background: #ECF0F5;
+    border-radius: 50%;
+} 
+
+.header .contact-social-media-container::after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    height: 60px;
+    width: 60px; 
+    top: 15px;
+    right: -30px;
+    background:#ECF0F5;
+    border-radius: 50%;
+}
+
+
+.contact-social-media-container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+    background: transparent;
+    height: 100%; 
+}
+
+.contact-social-media-container ul li{
+    display: inline;
+    background: transparent;
+    line-height: 50px;
+    margin: 0 20px 0 20px;
+    color: #FFF;
+}
+
+.contact-social-media-container .contact-details{
+    position: relative; 
+    display: inline-block;
+    font-size: 15px;
+} 
+
+.contact-social-media-container .social-media-links{
+    position: absolute;
+    display: inline-block; 
+    font-size: 21px;
+    right: 60px;
+}
+
+.contact-social-media-container .social-media-links li{
+    margin: 0 5px 0 5px; 
+}
+
+.contact-social-media-container .social-media-links li a:hover{
+    
+    border-bottom: 2px solid white; 
+    
+}
+
+.title{
+    position: relative;
+    margin-top: 50px;
+    background: #E1E0E0;
+    height: 150px;
+}
+
+.title > *{
+    background: transparent; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px 0 0 0;
+   
+}
+
+.title h1{ 
+    margin: 0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #004AAD;
+    text-shadow: 0 3px 7px #ADB5BD;
+}
+
+.title h5{
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #004AAD;
+}
+
+.title img{
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 200px; 
+    left: 30px;
+    top: -37px;
+}
+
+
+.nav{
+    position: relative;  
+    background: transparent;
+} 
+
+.nav .nav-items{
+    margin: 0;
+    height: 50px;   
+    padding: 10px 30px 10px 30px;
+}
+
+
+
+.nav ul{
+    display: flex; 
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    column-gap: 20px;
+    row-gap: 10px;
+    background: transparent;
+}
+
+
+.nav ul li{
+    
+    text-align: center; 
+}
+
+.nav ul li a{
+    display: block;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #004AAD;
+    text-decoration: none;
+    text-transform: uppercase; 
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    padding: 0 10px 0 10px;
+    /* Hover Off */
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+/* Hover  In */
+.nav ul li a:hover{
+    background: #E1E0E0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.nav .nav-items li:nth-child(2) a::after{
+    content: "▼";
+    margin: 5px;
+}
+
+.nav .nav-items li:nth-child(4) a::after{
+    content: "▼";
+    margin: 5px;
+}
+
+/* Body */
+
+.body{  
+    position: relative;
+    background-image: url(../assets/fcpc_gym.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    height: 75vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.body > *{
+    background: transparent;    
+}
+.body h1{ 
+    /* Opaacity without affecting the child */
+    
+    background: rgba(255, 255, 255, 0.3); 
+    font-family: 'Sora', sans-serif;
+    height: 150px;
+    display: block;
+    color: #004AAD; 
+    text-transform: uppercase; 
+    font-size: 5rem;
+    margin-top: 150px;
+    line-height: 150px;
+    letter-spacing: 5px;
+    transition: 0.5s ease;
+}
+
+.body h1:hover{
+    background: rgba(255, 255, 255, 0.8); 
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.body a{
+    display: inline-block; 
+    color: #FFF;
+    height: 50px;
+    width: 150px;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    line-height: 50px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+.body a:hover{
+    background: rgba(255, 255, 255, 0.7);
+    transition: 0.5s ease;
+}
+
+/* Footer */
+
+.footer{
+    position: relative;
+    display: block;
+    background: #004AAD;
+    height: 15vh;
+    margin: 0;
+    padding: 10px 0 0 0 ;
+    text-align: center;
+}
+
+.footer > *{ 
+    background: transparent;
+}
+
+.footer h3{
+    text-transform: uppercase;
+    color: #EEBA34;
+    font-size: 1.5rem;
+}
+
+.footer p{
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.message-us{
+    text-align: center;
+    display: block;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background: #0000FF;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);  
+}
+
+.message-us a{
+    line-height: 50px;
+    font-size: 1.5rem;
+}

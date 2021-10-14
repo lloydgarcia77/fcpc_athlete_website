@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sora:wght@100;200;600;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    background: #ECF0F5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    background: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    background: transparent;
+}
+/* Header */
+.container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.header .contact-social-media-container{
+    position: relative; 
+    margin: auto;
+    padding: 0 50px 0 50px; 
+    background: #004AAD;
+    height: 50px;
+    width: 80%;
+    color: #FFF; 
+}
+
+.header .contact-social-media-container a{ 
+    text-decoration: none;
+    color: #FFF; 
+}
+
+.header .contact-social-media-container::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    height: 60px;
+    width: 60px; 
+    top: 15px;
+    left: -30px;
+    background: #ECF0F5;
+    border-radius: 50%;
+} 
+
+.header .contact-social-media-container::after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    height: 60px;
+    width: 60px; 
+    top: 15px;
+    right: -30px;
+    background:#ECF0F5;
+    border-radius: 50%;
+}
+
+
+.contact-social-media-container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+    background: transparent;
+    height: 100%; 
+}
+
+.contact-social-media-container ul li{
+    display: inline;
+    background: transparent;
+    line-height: 50px;
+    margin: 0 20px 0 20px;
+    color: #FFF;
+}
+
+.contact-social-media-container .contact-details{
+    position: relative; 
+    display: inline-block;
+    font-size: 15px;
+} 
+
+.contact-social-media-container .social-media-links{
+    position: absolute;
+    display: inline-block; 
+    font-size: 21px;
+    right: 60px;
+}
+
+.contact-social-media-container .social-media-links li{
+    margin: 0 5px 0 5px; 
+}
+
+.contact-social-media-container .social-media-links li a:hover{
+    
+    border-bottom: 2px solid white; 
+    
+}
+
+.title{
+    position: relative;
+    margin-top: 50px;
+    background: #E1E0E0;
+    height: 150px;
+}
+
+.title > *{
+    background: transparent; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px 0 0 0;
+   
+}
+
+.title h1{ 
+    margin: 0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #004AAD;
+    text-shadow: 0 3px 7px #ADB5BD;
+}
+
+.title h5{
+    margin: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #004AAD;
+}
+
+.title img{
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 200px; 
+    left: 30px;
+    top: -37px;
+}
+
+/* Body */
+
+.body{
+    display: block; 
+    position: relative;
+    margin: 30px 0 0 0 ;
+    background: #E1E0E0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-container{
+    display: flex;
+}
+/* Navigation */
+.nav{ 
+    background: transparent;   
+}
+
+.nav ul{
+    display: inline-block;
+    list-style-type: none;
+    background: #1B1C1D;
+    margin: 0;
+    height: 100%;
+    width: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.nav ul li{
+    display: block;
+    color: #FFF;
+    background: transparent;
+    height: 100px;
+}
+
+.nav ul li a{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.nav ul li a:hover{
+    background: #35BDB2; 
+}
+
+.nav ul li a i{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: 0.5s ease;
+}
+.nav ul li p{
+    background: transparent;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* Profile container */
+.profile-container{
+    padding: 0 0 0 50px;
+    display: flex; 
+    align-items: center; 
+    column-gap: 30px;
+    position: relative;
+    background-image: linear-gradient(to left, #ECF0F5, #1B1C1D);
+    height: 180px;
+    width: 100%; 
+}
+
+.profile-container img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);  
+}
+
+.profile-container .data-details, .profile-container .data-details > *{
+    background: transparent;
+    text-align: center;
+    margin: 5px;
+}
+
+.profile-container .data-details h2{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.profile-container .data-details h5{
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.tab-container{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+  
